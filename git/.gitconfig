@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	list = log --oneline --decorate
+	last = log --pretty=format:'%C(yellow)%h  %ad%Cred%d -> %Creset%s%Cblue | [%cn]' --decorate --date=short --abbrev-commit --graph -30
+	unstage = reset HEAD --
+	stl = stash list
+	clean-tag = tag -l | xargs git tag -d
+[user]
+	email = sebastien.flochlay.external@airbus.com
+	name = Sebastien Flochlay

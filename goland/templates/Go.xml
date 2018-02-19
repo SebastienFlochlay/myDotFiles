@@ -1,0 +1,23 @@
+<templateSet group="Go">
+  <template name="todo" value="// todo [$Date$] : $Message$" description="Todo task marker" toReformat="false" toShortenFQNames="true">
+    <variable name="Date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="Message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GO_FILE" value="true" />
+      <option name="GO_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="dgm" value="debugMessage := $Value$&#10;_ = debugMessage" description="Debug message" toReformat="false" toShortenFQNames="true">
+    <variable name="Value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GO_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="omega" value="Ω($Value$).Should($Comparator$)" description="Omega expression" toReformat="false" toShortenFQNames="true">
+    <variable name="Value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Comparator" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GO_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

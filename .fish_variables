@@ -1,0 +1,20 @@
+# Set fish welcome message
+set fish_greeting "Dans sa demeure de R'lyeh la morte, Cthulhu rêve et attend"
+echo "coucou"
+# Setup Go variables
+#set -x GOROOT /usr/local/Cellar/go/1.10.3/libexec
+set -x GOROOT /usr/local/go
+set -x GOPATH $HOME/workspaces/go
+
+# Setup Flutter variables
+#set -x FLUTTERPATH $HOME/sdk/flutter
+
+# Setup Visual Code variables
+#set -x VSCODEPATH '/Applications/Visual Studio Code.app/Contents/Resources/app'
+
+# Set Path
+#set -x PATH $PATH $GOROOT/bin $GOPATH/bin $FLUTTERPATH/bin $VSCODEPATH/bin $JAVA_HOME/bin
+#set -x PATH $PATH
+
+set -g theme_nerd_fonts no
+set -g theme_powerline_fonts yes

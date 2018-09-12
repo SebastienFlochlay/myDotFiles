@@ -1,0 +1,20 @@
+# Set system alias
+alias l "ls -laF"
+
+# Set abbreviations
+if status --is-interactive
+    set -g fish_user_abbreviations
+	abbr --add st git status
+	abbr --add br git branch
+    abbr --add co git checkout
+	abbr --add ci 'git commit -am'
+	abbr --add rb 'git fetch; and git rebase origin/master'
+	abbr --add rbi 'git fetch; and git rebase -i origin/master'
+    abbr --add pull git pull
+    abbr --add yolo 'git push --force-with-lease'
+    abbr --add gm 'git checkout master; and git pull --rebase'
+	abbr --add gpr 'git pull --rebase'
+    abbr --add gl 'git log --oneline --graph --decorate -20'
+    abbr --add gcr 'git add .; and git ci -am "fix: code review"; and git push'
+    abbr --add gctag 'git tag -l | xargs git tag -d'
+end

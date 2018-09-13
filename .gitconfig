@@ -1,0 +1,19 @@
+[user]
+	name = Sebastien Flochlay
+	email = sebastien.flochlay@stack-labs.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	rb = rebase
+	last = log -1 HEAD
+	ll = log --oneline --graph --decorate -15
+	list = log --pretty=format:'%C(yellow)%h  %ad%Cred%d -> %Creset%s%Cblue | [%cn]' --decorate --date=short --abbrev-commit --graph -30
+	list-alias = config --get-regexp alias
+	trash = checkout -- .
+	graph = log --all --decorate --oneline --graph
+	unstage = reset HEAD --
+	stl = stash list
+[core]
+	#editor = code --wait
